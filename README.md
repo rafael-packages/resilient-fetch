@@ -1,10 +1,10 @@
-# @rafaeldasilvadeveloper/resilient-fetch
+# @rafaelsilvadeveloper/resilient-fetch
 
 A strongly typed, zero-dependency TypeScript wrapper adding retries, exponential backoff, jitter, and circuit breaker patterns to native fetch.
 
-[![NPM Version](https://img.shields.io/npm/v/@rafaeldasilvadeveloper/resilient-fetch.svg?style=flat-square)](https://www.npmjs.com/package/@rafaeldasilvadeveloper/resilient-fetch)
+[![NPM Version](https://img.shields.io/npm/v/@rafaelsilvadeveloper/resilient-fetch.svg?style=flat-square)](https://www.npmjs.com/package/@rafaelsilvadeveloper/resilient-fetch)
 [![Discord Support](https://img.shields.io/discord/1111111111?color=7289da&label=Discord&logo=discord&style=flat-square)](https://discord.gg/7Fw7snafYS)
-[![Zero Dependencies](https://img.shields.io/badge/dependencies-zero-blueviolet.svg?style=flat-square)](https://www.npmjs.com/package/@rafaeldasilvadeveloper/resilient-fetch)
+[![Zero Dependencies](https://img.shields.io/badge/dependencies-zero-blueviolet.svg?style=flat-square)](https://www.npmjs.com/package/@rafaelsilvadeveloper/resilient-fetch)
 
 ## Features
 
@@ -17,7 +17,7 @@ A strongly typed, zero-dependency TypeScript wrapper adding retries, exponential
 ## Installation
 
 ```bash
-npm install @rafaeldasilvadeveloper/resilient-fetch
+npm install @rafaelsilvadeveloper/resilient-fetch
 ```
 
 ## Getting Started
@@ -25,7 +25,7 @@ npm install @rafaeldasilvadeveloper/resilient-fetch
 Replace your native `fetch` with `resilientFetch` for automatic protection:
 
 ```typescript
-import { resilientFetch } from '@rafaeldasilvadeveloper/resilient-fetch';
+import { resilientFetch } from '@rafaelsilvadeveloper/resilient-fetch';
 
 async function run() {
   // Works exactly like standard fetch, but retries under 429, 500, 502, 503, 504 errors!
@@ -42,7 +42,7 @@ run();
 Create a custom configured resilient fetch instance:
 
 ```typescript
-import { createResilientFetch } from '@rafaeldasilvadeveloper/resilient-fetch';
+import { createResilientFetch } from '@rafaelsilvadeveloper/resilient-fetch';
 
 const customFetch = createResilientFetch({
   retries: 4,               // Retry up to 4 times
