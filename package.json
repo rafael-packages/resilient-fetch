@@ -1,0 +1,47 @@
+{
+  "name": "@rafaeldasilvadeveloper/resilient-fetch",
+  "version": "1.0.0",
+  "description": "A strongly typed, zero-dependency TypeScript wrapper adding retries, exponential backoff, jitter, and circuit breaker patterns to native fetch.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafael-packages/resilient-fetch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rafael-packages/resilient-fetch/issues"
+  },
+  "homepage": "https://github.com/rafael-packages/resilient-fetch#readme",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "bun test",
+    "prepare": "bun run build",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write src/**/*.ts tests/**/*.ts"
+  },
+  "keywords": [
+    "fetch",
+    "retry",
+    "backoff",
+    "resilience",
+    "circuit-breaker",
+    "jitter",
+    "typescript"
+  ],
+  "author": "realkalashnikov",
+  "license": "MIT",
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.3.3"
+  }
+}
