@@ -1,6 +1,6 @@
 {
   "name": "@rafaelsilvadeveloper/resilient-fetch",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A strongly typed, zero-dependency TypeScript wrapper adding retries, exponential backoff, jitter, and circuit breaker patterns to native fetch.",
   "repository": {
     "type": "git",
